@@ -1,0 +1,13 @@
+
+version: "3.3"
+
+services:
+  firefox:
+    build: .
+    volumes:
+      - /tmp/.X11-unix/:/tmp/.X11-unix/
+    environment:
+      - DISPLAY
+    network_mode: host
+    
+
